@@ -58,7 +58,7 @@ function Supprimer(){
     const supp = document.querySelectorAll("td button.btn")
     const idx = supp.dataset.index
   supp.addEventListener("click",function(){
-    const filuser = user.filter( us => us.id  === user[idx] )
+    const filuser = user.filter( us => us.id  === user[idx].id)
     user.remove(filuser)
   })
 }
